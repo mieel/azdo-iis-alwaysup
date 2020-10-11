@@ -3,11 +3,11 @@ param (
     ,
     [string[]] $replicaPorts = @('8041','8042')
     ,
-    $healthCheckUrl = "http://$baseUrl/api/ping"
+    [string] $healthCheckUrl = "http://$baseUrl/api/ping"
     ,
-    $healthCheckResponse = 'pong'
+    [string] $healthCheckResponse = 'pong'
     ,
-    $healthCheckInterval = '00:00:10' # 10 seconds
+    [string] $healthCheckInterval = '00:00:10' # 10 seconds
     ,
     [switch] $Ssl
 )
